@@ -142,7 +142,7 @@ export interface BackendFactoryInput {
 export class SkyhookDndModule {
     static forRoot(
         backendOrBackendFactory: BackendInput | BackendFactoryInput
-    ): ModuleWithProviders {
+    ): ModuleWithProviders<SkyhookDndModule> {
         return {
             ngModule: SkyhookDndModule,
             providers: [
